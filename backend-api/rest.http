@@ -1,0 +1,35 @@
+#### ADMIN API #####
+
+### ROOT domain test
+GET http://localhost:8000
+
+### GET API
+GET http://localhost:8000/api/v1/admin/
+
+### POST
+POST http://localhost:8000/api/v1/admin
+Content-Type: application/json
+
+{
+    "fName" : "aaaa",
+    "lName" : "bbbb",
+    "password" : "123456",
+    "dob" : "2020-02-20",
+    "address" : "SYDNEY",
+    "email" : "adae@abc.com",
+    "phone" : "1234567890"
+}
+
+### PATCH
+PATCH  http://localhost:8000/api/v1/admin
+Content-Type: application/json
+
+{
+    "fName" : "aaaa",
+    "lName" : "bbbb",
+    "password" : "123456",
+    "dob" : "2020-02-20",
+    "address" : "SYDNEY",
+    "email" : "abc@abc.com",
+    "phone" : "0123456789"
+}
